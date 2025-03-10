@@ -16,8 +16,12 @@
 
 #### Версия
 
-`version.txt` содержит дату и время последнего обновления.  
+`version.txt` содержит дату и время последнего обновления (в первой строке).  
 Служит минималистичным индикатором того, что было сделано обновление.
+
+Этот файл также может содержать необязательные параметры (по 1 на строку, `param_name = value`):
+* `files_path` - путь к папке с распакованными файлами (по умолчанию, как говорилось выше, `files`);
+* `compress_info` - нужно ли создавать отдельный сжатый файл с содержимым `info.txt` (если не задано, то не нужно).
 
 #### Информация
 
@@ -58,8 +62,12 @@ Dir `files` with unpacked files.
 
 #### Version
 
-`version.txt` contains the date and time of the last update.  
+`version.txt` contains the date and time of the last update (in the first line).  
 Serves as a minimalistic indicator that an update has been made.
+
+This file may also contain optional parameters (1 per line, `param_name = value`):
+* `files_path` - the path to the folder with unpacked files (by default, as mentioned above, `files`);
+* `compress_info` - do you need to create a separate compressed file with the content of `info.txt` (if not given, then no need).
 
 #### Info
 
